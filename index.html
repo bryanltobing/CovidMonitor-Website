@@ -13,56 +13,8 @@
     <!-- Import Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
 
-    <style>
-
-        /* Mobile Version */
-        @media only screen and (max-width: 425px) {
-            .banner-content {
-                top: 100px;
-                bottom: 100px;
-                left: 0;
-                right: 0;
-                background-color: red;
-                display: none;
-            }
-
-            .banner-content h2 {
-                font-size: 10px;
-            }
-
-            .banner-content button {
-
-            }
-        }
-
-
-        .video-container {
-            position: relative;
-            
-        }
-
-        nav {
-            position: absolute;
-            z-index: 100;
-            border-bottom: nav;
-            box-shadow: none;
-        }
-
-
-        /* Banner */
-        .banner-content {
-            position: absolute;
-            top: 80px;
-            left: 100px;
-            max-width: 40%;
-            text-transform: uppercase;
-        }
-        .banner-content  h2 {
-            font-family: 'Lato', sans-serif;
-        }
-
-
-    </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./aset/css/style.css">
 </head>
 <body>
 
@@ -72,41 +24,75 @@
         <nav class="transparent">
             <div class="container">
                 <div class="nav-wrapper transparent">
+                    <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                        <i class="material-icons">menu</i>
+                    </a>
                     <ul class="right hide-on-med-and-down transparent">
                         <li><a href="#">Home</a></li>
+                        <li><a href="#">Info</a></li>
                         <li><a href="#">Data</a></li>
-                        <li><a href="#">Close</a></li>
+                    </ul>
+                    <ul class="sidenav white lighten-2" id="mobile-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Info</a></li>
+                        <li><a href="#">Data</a></li>
                     </ul>
                 </div>
             </div>
+
             
         </nav>
+          
 
     </header>
     
 
     <!-- Banner -->
     <section class="banner">
-        <div class="video-container">
-            <video class="responsive-video" autoplay loop autobuffer muted playsinline>
-                <source src="aset/video/covid.mp4" type="video/mp4">
-            </video>
-            <div class="banner-content">
-                <h2 class="white-text text-darken-2">Stop Covid-19</h2>
-                <button class="btn orange darken-2">Info</button>
-            </div>
+        <video class="responsive-video" autoplay loop autobuffer muted playsinline>
+            <source src="aset/video/covid.mp4" type="video/mp4">
+        </video>
+        <div class="banner-content">
+            <h2 class="white-text text-darken-2">Stop Covid-19</h2>
+            <button onclick="window.location.href='#info'" class="btn orange darken-2">Info</button>
         </div>
-        
-        
     </section>
+    <section class="banner-mobile center hide-on-med-and-up">
+        <div class="banner-content-mobile">
+            <h3 class="text-darken-2">STOP COVID-19</h3>
+            <button class="btn orange darken-2">Info</button>
+        </div>
+    </section>
+
+    <!-- Info -->
+    <section class="info">
+            <div class="container z-depth-1">
+                <article>
+                    <h1 class="center grey-text text-darken-3">CORONA VIRUS DESEASE</h1>
+                    <p class="flow-text">Coronaviruses are a group of related viruses that cause diseases in mammals and birds. In humans, coronaviruses cause respiratory tract infections that can range from mild to lethal. Mild illnesses include some cases of the common cold (which has other possible causes, predominantly rhinoviruses), while more lethal varieties can cause SARS, MERS, and COVID-19.</p>
+                </article>
+            </div>
+    </section>
+
+
+    <!-- Parallax -->
+    <div class="parallax-container">
+        <div class="parallax"><img src="./aset/img/covid.jpg" class="responsive-img"></div>
+    </div>
     
     
     
     
     
     <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.parallax').parallax();
+        });
+    </script>
     </script>
 </body>
 </html>
