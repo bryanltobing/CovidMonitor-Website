@@ -21,27 +21,28 @@
     <!-- Header -->
     <header>
 
-        <nav class="transparent">
-            <div class="container">
-                <div class="nav-wrapper transparent">
-                    <a href="#" class="sidenav-trigger" data-target="mobile-nav">
-                        <i class="material-icons">menu</i>
-                    </a>
-                    <ul class="right hide-on-med-and-down transparent">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Info</a></li>
-                        <li><a href="#">Data</a></li>
-                    </ul>
-                    <ul class="sidenav white lighten-2" id="mobile-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Info</a></li>
-                        <li><a href="#">Data</a></li>
-                    </ul>
+        
+        <div class="navbar-fixed">
+            <nav class="transparent">
+                <div class="container">
+                    <div class="nav-wrapper transparent">
+                        <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down transparent">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Info</a></li>
+                            <li><a href="#data">Data</a></li>
+                        </ul>
+                        <ul class="sidenav white lighten-2" id="mobile-nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Info</a></li>
+                            <li><a href="#">Data</a></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-
-            
-        </nav>
+            </nav>
+        </div>
           
 
     </header>
@@ -54,22 +55,22 @@
         </video>
         <div class="banner-content">
             <h2 class="white-text text-darken-2">Stop Covid-19</h2>
-            <button onclick="window.location.href='#info'" class="btn orange darken-2">Info</button>
+            <a href="#info" class="btn orange darken-2">INFO</a>
         </div>
     </section>
     <section class="banner-mobile center hide-on-med-and-up">
         <div class="banner-content-mobile">
             <h3 class="text-darken-2">STOP COVID-19</h3>
-            <button class="btn orange darken-2">Info</button>
+            <a href="#info" class="btn orange darken-2">INFO</a>
         </div>
     </section>
 
     <!-- Info -->
-    <section class="info">
+    <section class="info scrollspy" id="info" style="padding-bottom: 80px;">
             <div class="container z-depth-1">
-                <article>
-                    <h1 class="center grey-text text-darken-3">CORONA VIRUS DESEASE</h1>
-                    <p class="flow-text">Coronaviruses are a group of related viruses that cause diseases in mammals and birds. In humans, coronaviruses cause respiratory tract infections that can range from mild to lethal. Mild illnesses include some cases of the common cold (which has other possible causes, predominantly rhinoviruses), while more lethal varieties can cause SARS, MERS, and COVID-19.</p>
+                <article class="white-text">
+                    <h1 class="center text-darken-3">CORONA VIRUS DESEASE</h1>
+                    <p class="flow-text">Coronaviruses are a group of related viruses that cause diseases in mammals and birds. In humans, coronaviruses cause respiratory tract infections that can range from mild to lethal. Mild illnesses include some cases of the common cold (which has other possible causes, predominantly rhinoviruses), while more lethal varieties cause SARS, MERS, and COVID-19.</p>
                 </article>
             </div>
     </section>
@@ -79,6 +80,108 @@
     <div class="parallax-container">
         <div class="parallax"><img src="./aset/img/covid.jpg" class="responsive-img"></div>
     </div>
+
+
+    <!-- Data -->
+    <section class="world-data">
+        <div class="container scrollspy" id="data">
+            <div class="row">
+                <h2 class="center white-text">World Case</h2>
+                <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator responsive-img" src="./aset/img/totalcase.jpg" style="height:50%;">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title orange-text activator" style="font-weight: bold;">Total Case<i class="material-icons right">more_vert</i></span>
+                          <p><span class="new badge orange darken-4" data-badge-caption="new case">4</span>Today --></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title orange-text" style="font-weight: bold;">Total Case<i class="material-icons right">close</i></span>
+                          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator responsive-img" src="./aset/img/recovered.jpg" style="height:50%;">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title green-text activator" style="font-weight: bold;">Recovered<i class="material-icons right">more_vert</i></span>
+                          <p><span class="new badge green darken-4" data-badge-caption="new recovered">4</span>Today --></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title green-text" style="font-weight: bold;">Recovered<i class="material-icons right">close</i></span>
+                          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 l4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator responsive-img" src="./aset/img/death.jpg" style="height:50%;">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title red-text activator" style="font-weight: bold;">Death<i class="material-icons right">more_vert</i></span>
+                          <p><span class="new badge red darken-4" data-badge-caption="new deaths">4</span>Today --></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title red-text" style="font-weight: bold;">Death<i class="material-icons right">close</i></span>
+                          <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!-- Parallax -->
+    <div class="parallax-container">
+        <div class="parallax"><img src="./aset/img/covid2.jpg" class="responsive-img"></div>
+    </div>
+
+
+    <!-- Data 2-->
+    <section class="indonesia-data">
+        <div class="container">
+            <h2 class="center white-text">Indonesia Case</h2>
+            <div class="row center">
+                <div class="col s12 m6 l3">
+                  <div class="card-panel whitesmoke hoverable cOne">
+                    <h5 class="orange-text text-darken-2">Total Case</h5>
+                    <h6 class="">1,999,019</h6>
+                    <p class="one">29 New Case</p>
+                </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card-panel whitesmoke lighten-2 hoverable cTwo">
+                    <h5 class="green-text text-lighten-2">Recovered</h5>
+                    <h6 class="">1,393,379</h6>
+                    <p class="two">29 New Recovered</p>
+                    </div>
+                </div>
+                  <div class="col s12 m6 l3">
+                    <div class="card-panel whitesmoke hoverable cThree">
+                    <h5 class="red-text text-darken-2">Deaths</h5>
+                    <h6 class="">126,708</h6>
+                    <p class="three">29 New Case</p>
+                    </div>
+                  </div>
+                  <div class="col s12 m6 l3">
+                    <div class="card-panel whitesmoke hoverable cFour">
+                    <h5 class="blue-text text-lighten-2">Active Case</h5>
+                    <h6 class="">478,932</h6>
+                    <p class="four">29 New Case</p>
+                    </div>
+                  </div>
+              </div>
+        </div>
+
+    </section>
+    
     
     
     
@@ -91,7 +194,18 @@
         $(document).ready(function(){
             $('.sidenav').sidenav();
             $('.parallax').parallax();
+            $('.scrollspy').scrollSpy();
+            $(window).scroll(function(){
+                if($(window).scrollTop()>400){
+                    $('nav').removeClass('transparent');
+                    $('nav').addClass('red darken-4');
+                }else{
+                    $('nav').removeClass('red darken-4');
+                    $('nav').addClass('transparent');
+                }
+            });
         });
+
     </script>
     </script>
 </body>
