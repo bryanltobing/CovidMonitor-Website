@@ -10,7 +10,32 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <!-- Import Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
     <style>
+
+        /* Mobile Version */
+        @media only screen and (max-width: 425px) {
+            .banner-content {
+                top: 100px;
+                bottom: 100px;
+                left: 0;
+                right: 0;
+                background-color: red;
+                display: none;
+            }
+
+            .banner-content h2 {
+                font-size: 10px;
+            }
+
+            .banner-content button {
+
+            }
+        }
+
+
         .video-container {
             position: relative;
             
@@ -22,6 +47,21 @@
             border-bottom: nav;
             box-shadow: none;
         }
+
+
+        /* Banner */
+        .banner-content {
+            position: absolute;
+            top: 80px;
+            left: 100px;
+            max-width: 40%;
+            text-transform: uppercase;
+        }
+        .banner-content  h2 {
+            font-family: 'Lato', sans-serif;
+        }
+
+
     </style>
 </head>
 <body>
@@ -30,22 +70,37 @@
     <header>
 
         <nav class="transparent">
-            <div class="nav-wrapper transparent">
-                <ul class="right hide-on-med-and-down transparent">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <div class="container">
+                <div class="nav-wrapper transparent">
+                    <ul class="right hide-on-med-and-down transparent">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Data</a></li>
+                        <li><a href="#">Close</a></li>
+                    </ul>
+                </div>
             </div>
+            
         </nav>
 
     </header>
     
-    <div class="video-container">
-        <video class="responsive-video" autoplay loop>
-            <source src="aset/video/covid.mp4" type="video/mp4">
-        </video>
-    </div>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="video-container">
+            <video class="responsive-video" autoplay loop autobuffer muted playsinline>
+                <source src="aset/video/covid.mp4" type="video/mp4">
+            </video>
+            <div class="banner-content">
+                <h2 class="white-text text-darken-2">Stop Covid-19</h2>
+                <button class="btn orange darken-2">Info</button>
+            </div>
+        </div>
+        
+        
+    </section>
+    
+    
     
     
     
