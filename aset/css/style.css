@@ -126,6 +126,10 @@ article p {
     border: 1px blue;
 }
 
+/* Footer */
+.footer-copyright a{
+    margin-right: 40px;
+}
 
 
 
@@ -151,5 +155,8 @@ article p {
         text-align: center;
     }
 
+    .footer-copyright a{
+        margin-right: 0px;
+    }
     
 }
