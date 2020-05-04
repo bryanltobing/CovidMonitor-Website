@@ -25,7 +25,27 @@
     <!-- Header -->
     <header>
 
-        <app-bar></app-bar>
+      <ul class="sidenav white lighten-2" id="mobile-nav">
+        <li><a href="#banner">Home</a></li>
+        <li><a href="#info">Info</a></li>
+        <li><a href="#data">Data</a></li>
+      </ul>   
+      <div class="navbar-fixed">
+          <nav class="transparent">
+              <div class="container">
+                  <div class="nav-wrapper transparent">
+                      <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                          <i class="material-icons">menu</i>
+                      </a>
+                      <ul class="right hide-on-med-and-down transparent">
+                          <li><a href="#banner">Home</a></li>
+                          <li><a href="#info">Info</a></li>
+                          <li><a href="#data">Data</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </div>
           
 
     </header>
@@ -129,42 +149,38 @@
     
     
         <!-- Data 2-->
+        
         <section class="indonesia-data">
-            <div class="container">
-                <h2 class="center white-text">Indonesia Case</h2>
-                <div class="row center">
-                    <div class="col s12 m6 l3">
-                      <div class="card-panel whitesmoke hoverable cOne">
-                        <h5 class="orange-text text-darken-2">Total Case</h5>
-                        <h6 class="">1,999,019</h6>
-                        <p class="one">29 New Case</p>
-                    </div>
-                    </div>
-                    <div class="col s12 m6 l3">
-                        <div class="card-panel whitesmoke lighten-2 hoverable cTwo">
-                        <h5 class="green-text text-lighten-2">Recovered</h5>
-                        <h6 class="">1,393,379</h6>
-                        <p class="two">29 New Recovered</p>
-                        </div>
-                    </div>
-                      <div class="col s12 m6 l3">
-                        <div class="card-panel whitesmoke hoverable cThree">
-                        <h5 class="red-text text-darken-2">Deaths</h5>
-                        <h6 class="">126,708</h6>
-                        <p class="three">29 New Case</p>
-                        </div>
-                      </div>
-                      <div class="col s12 m6 l3">
-                        <div class="card-panel whitesmoke hoverable cFour">
-                        <h5 class="blue-text text-lighten-2">Active Case</h5>
-                        <h6 class="">478,932</h6>
-                        <p class="four">29 New Case</p>
-                        </div>
-                      </div>
-                  </div>
+          <h2 class="center white-text">Indonesia Case</h2>
+          <div class="container">
+            <div class="row center">
+              <div class="col s12 m6 l3">
+                <card-data title="Total Case">
+                  <div slot="case">1.999.020</div>
+                  <div slot="newcase">27 new case</div>
+                </card-data>
+              </div>
+              <div class="col s12 m6 l3">
+                <card-data title="Recovered">
+                  <div slot="case">1262,706</div>
+                  <div slot="newcase">120 new case</div>
+                </card-data>
+              </div>
+              <div class="col s12 m6 l3">
+                <card-data title="Deaths">
+                  <div slot="case">126,706</div>
+                  <div slot="newcase">384 new case</div>
+                </card-data>
+              </div>
+              <div class="col s12 m6 l3">
+                <card-data title="Active Case">
+                  <div slot="case">478,932</div>
+                  <div slot="newcase">121 new case</div>
+                </card-data>
+              </div>
             </div>
-    
-        </section>
+          </div>
+      </section>
     </main>
     
 

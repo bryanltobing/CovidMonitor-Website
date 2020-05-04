@@ -1,0 +1,21 @@
+<div class="col s12 m6 l3">
+                <div class="card-panel whitesmoke lighten-2 hoverable cTwo">
+                <h5 class="green-text text-lighten-2">Recovered</h5>
+                <h6 class="">1,393,379</h6>
+                <p class="two">29 New Recovered</p>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card-panel whitesmoke hoverable cThree">
+                <h5 class="red-text text-darken-2">Deaths</h5>
+                <h6 class="">126,708</h6>
+                <p class="three">29 New Case</p>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card-panel whitesmoke hoverable cFour">
+                <h5 class="blue-text text-lighten-2">Active Case</h5>
+                <h6 class="">478,932</h6>
+                <p class="four">29 New Case</p>
+                </div>
+            </div>

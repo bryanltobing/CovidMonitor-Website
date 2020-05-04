@@ -1,1 +1,1 @@
-import "../component/app-bar.js";
+import "../component/card-data.js";
