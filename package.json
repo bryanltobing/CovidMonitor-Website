@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/bryantobing12/CovidMonitor-Website/issues"
   },
-  "homepage": "https://github.com/bryantobing12/CovidMonitor-Website#readme"
+  "homepage": "https://github.com/bryantobing12/CovidMonitor-Website#readme",
+  "dependencies": {
+    "jquery": "^3.5.0",
+    "materialize-css": "^1.0.0-rc.2"
+  },
+  "devDependencies": {}
 }
