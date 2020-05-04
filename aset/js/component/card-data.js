@@ -103,23 +103,22 @@ class CardData extends HTMLElement {
         this.shadowRoot.appendChild(template.content.cloneNode(true)); 
         this.shadowRoot.querySelector('h5').innerText = this.getAttribute('title');
 
-        const test = this.getAttribute('title');
-        console.log(test);
-        if(test == 'Recovered') {
+        const card = this.getAttribute('title');
+        if(card == 'Recovered') {
             this.shadowRoot.querySelector('h5').classList.remove('orange-text');
             this.shadowRoot.querySelector('h5').classList.add('green-text');
             this.shadowRoot.querySelector('p').classList.remove('one');
             this.shadowRoot.querySelector('p').classList.add('two');
             this.shadowRoot.querySelector('.hoverable').classList.remove('cOne');
             this.shadowRoot.querySelector('.hoverable').classList.add('cTwo');
-        } else if(test == 'Deaths') {
+        } else if(card == 'Deaths') {
             this.shadowRoot.querySelector('h5').classList.remove('orange-text');
             this.shadowRoot.querySelector('h5').classList.add('red-text');
             this.shadowRoot.querySelector('p').classList.remove('one');
             this.shadowRoot.querySelector('p').classList.add('three');
             this.shadowRoot.querySelector('.hoverable').classList.remove('cOne');
             this.shadowRoot.querySelector('.hoverable').classList.add('cThree');
-        } else if(test == 'Active Case') {
+        } else if(card == 'Active Case') {
             this.shadowRoot.querySelector('h5').classList.remove('orange-text');
             this.shadowRoot.querySelector('h5').classList.add('blue-text');
             this.shadowRoot.querySelector('p').classList.remove('one');
