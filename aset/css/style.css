@@ -13,11 +13,6 @@ body {
     background-image: linear-gradient(to bottom right, #b12e1a, #b95846);
 }
 
-nav {
-    position: absolute;
-    box-shadow: none;
-    transition: 0.5s;
-}
 
 
 

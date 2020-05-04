@@ -18,33 +18,14 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./aset/css/style.css">
+    <link rel="stylesheet" href="./aset/css/app-bar.css">
 </head>
 <body>
 
     <!-- Header -->
     <header>
 
-        <ul class="sidenav white lighten-2" id="mobile-nav">
-            <li><a href="#banner">Home</a></li>
-            <li><a href="#info">Info</a></li>
-            <li><a href="#data">Data</a></li>
-        </ul>
-        <div class="navbar-fixed">
-            <nav class="transparent">
-                <div class="container">
-                    <div class="nav-wrapper transparent">
-                        <a href="#" class="sidenav-trigger" data-target="mobile-nav">
-                            <i class="material-icons">menu</i>
-                        </a>
-                        <ul class="right hide-on-med-and-down transparent">
-                            <li><a href="#banner">Home</a></li>
-                            <li><a href="#info">Info</a></li>
-                            <li><a href="#data">Data</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+        <app-bar></app-bar>
           
 
     </header>
@@ -251,6 +232,7 @@
         });
 
     </script>
-    </script>
+    <!-- Component -->
+    <script src="./app.js" type="module"></script>
 </body>
 </html>

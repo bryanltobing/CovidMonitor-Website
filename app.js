@@ -1,0 +1,1 @@
+import "./aset/js/view/main.js";
