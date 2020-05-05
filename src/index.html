@@ -94,7 +94,7 @@
         <section class="world-data">
             <div class="container scrollspy" id="data">
                 <div class="row">
-                    <h2 class="center white-text">World Case</h2>
+                    <h2 class="center white-text">Indonesia Case</h2>
                     <div class="col s12 l4">
                         <div class="card">
                             <div class="card-image waves-effect waves-block waves-light">
@@ -102,11 +102,11 @@
                             </div>
                             <div class="card-content">
                               <span class="card-title orange-text activator" style="font-weight: bold;">Total Case<i class="material-icons right">more_vert</i></span>
-                              <p><span class="new badge orange darken-4" data-badge-caption="new case">4</span>Today --></p>
+                              <p><span class="new badge orange darken-4" data-badge-caption="Details"></span>Today --></p>
                             </div>
                             <div class="card-reveal">
                               <span class="card-title orange-text" style="font-weight: bold;">Total Case<i class="material-icons right">close</i></span>
-                              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                              <h1 id="confirmedId"></h1>
                             </div>
                         </div>
                     </div>
@@ -117,11 +117,11 @@
                             </div>
                             <div class="card-content">
                               <span class="card-title green-text activator" style="font-weight: bold;">Recovered<i class="material-icons right">more_vert</i></span>
-                              <p><span class="new badge green darken-4" data-badge-caption="new recovered">4</span>Today --></p>
+                              <p><span class="new badge green darken-4" data-badge-caption="Details"></span>Today --></p>
                             </div>
                             <div class="card-reveal">
                               <span class="card-title green-text" style="font-weight: bold;">Recovered<i class="material-icons right">close</i></span>
-                              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                              <h1 id="recoveredId"></h1>
                             </div>
                         </div>
                     </div>
@@ -132,11 +132,11 @@
                             </div>
                             <div class="card-content">
                               <span class="card-title red-text activator" style="font-weight: bold;">Death<i class="material-icons right">more_vert</i></span>
-                              <p><span class="new badge red darken-4" data-badge-caption="new deaths">4</span>Today --></p>
+                              <p><span class="new badge red darken-4" data-badge-caption="Details"></span>Today --></p>
                             </div>
                             <div class="card-reveal">
                               <span class="card-title red-text" style="font-weight: bold;">Death<i class="material-icons right">close</i></span>
-                              <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                              <h1 id="deathsId"></h1>
                             </div>
                         </div>
                     </div>
@@ -155,31 +155,27 @@
         <!-- Data 2-->
         
         <section class="indonesia-data">
-          <h2 class="center white-text">Indonesia Case</h2>
+          <h2 class="center white-text">World Case</h2>
           <div class="container">
             <div class="row center">
               <div class="col s12 m6 l3">
                 <card-data title="Total Case">
-                  <div slot="case">1.999.020</div>
-                  <div slot="newcase">27 new case</div>
+                  <div slot="case" id="confirmed"></div>
                 </card-data>
               </div>
               <div class="col s12 m6 l3">
                 <card-data title="Recovered">
-                  <div slot="case">1262,706</div>
-                  <div slot="newcase">120 new case</div>
+                  <div slot="case" id="recovered"></div>
                 </card-data>
               </div>
               <div class="col s12 m6 l3">
                 <card-data title="Deaths">
-                  <div slot="case">126,706</div>
-                  <div slot="newcase">384 new case</div>
+                  <div slot="case" id="deaths"></div>
                 </card-data>
               </div>
               <div class="col s12 m6 l3">
                 <card-data title="Active Case">
-                  <div slot="case">478,932</div>
-                  <div slot="newcase">121 new case</div>
+                  <div slot="case" id="active-case"></div>
                 </card-data>
               </div>
             </div>
