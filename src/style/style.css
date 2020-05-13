@@ -71,6 +71,9 @@ nav {
     transition: 1s;
 } */
 
+.github-logo {
+    overflow: auto;
+}
 .centergithublogo {
     display: block;
     margin: 0 auto;
@@ -96,6 +99,10 @@ nav {
 .github-text:hover{
     transition: 0.3s;
     color : black;
+}
+.github-text-right {
+    float: right;
+    color: white;
 }
 
 /* Footer */
