@@ -66,7 +66,37 @@ nav {
 }
 
 
+/* .github-logo:hover{
+    background-color: black;
+    transition: 1s;
+} */
 
+.centergithublogo {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    float: left;
+    background-color: white;
+    border-radius: 100%;
+    max-width: 50px;
+    transition: 0.5s;
+    
+}
+.centergithublogo:hover {
+    background-color: #a67c7c;
+    transition: 0.5s;
+}
+
+.github-text {
+    padding: 15px;
+    margin: 0px 0px 0px 50px;
+    color: white;
+    transition: 1s;
+}
+.github-text:hover{
+    transition: 0.3s;
+    color : black;
+}
 
 /* Footer */
 .footer-copyright a{
