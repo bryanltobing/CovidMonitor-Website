@@ -3,7 +3,6 @@ Covid monitor website is a website application to provide info about COVID19 in 
 
 ##### Hosted on netlify [here](http://coronavirusdisease.netlify.app/)
 
-__
 
 ### Tech
 * [HTML](https://www.w3schools.com/html/html_intro.asp) - HTML is the standard markup language for creating Web pages.
