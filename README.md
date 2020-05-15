@@ -14,6 +14,7 @@ __
 * [Materialize](https://materializecss.com/) - A modern responsive front-end framework based on Material Design
 * [Jquery](https://jquery.com/) - The Write Less, Do More, JavaScript Library.
 * [Webpack](https://webpack.js.org/) - Webpack is a module bundler.for javascript.
+* [WebComponent](https://www.webcomponents.org/introduction) - Web components are a set of web platform APIs that allow you to create new custom, reusable, encapsulated HTML tags to use in web pages and web apps
 
 ### Installation
 
