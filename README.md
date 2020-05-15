@@ -12,7 +12,7 @@ __
 
 ### Libary / Framework / Module
 * [Materialize](https://materializecss.com/) - A modern responsive front-end framework based on Material Design
-* [Jquery] - The Write Less, Do More, JavaScript Library.
+* [Jquery](https://jquery.com/) - The Write Less, Do More, JavaScript Library.
 * [Webpack](https://webpack.js.org/) - Webpack is a module bundler.for javascript.
 
 ### Installation
