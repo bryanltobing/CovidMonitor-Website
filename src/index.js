@@ -17,6 +17,11 @@ for (var i = 0; i < parallax.length; i++){
 	M.Parallax.init(parallax[i]);
 }
 
+var scrollspies = document.querySelectorAll('.scrollspy')
+for (var i = 0; i < scrollspies.length; i++){
+	M.ScrollSpy.init(scrollspies[i]);
+}
+
 $(document).ready(function(){
 	$(window).scroll(function(){
 		if($(window).scrollTop()>400){
