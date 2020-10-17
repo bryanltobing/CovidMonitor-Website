@@ -12,9 +12,9 @@
     <!-- Header -->
     <header>
         <ul class="sidenav white lighten-2" id="mobile-nav">
-          <li><a href="#banner">Home</a></li>
-          <li><a href="#info">Info</a></li>
-          <li><a href="#data">Data</a></li>
+          <li class="navSide"><a href="#banner">Home</a></li>
+          <li class="navSide"><a href="#info">Info</a></li>
+          <li class="navSide"><a href="#data">Data</a></li>
         </ul>   
         <div class="navbar-fixed">
             <nav class="transparent">
@@ -199,5 +199,15 @@
           </div>
         </div>
     </footer>
+
+    <script>
+      document.querySelectorAll('.navSide').forEach(elm => {
+        elm.addEventListener('click', () => {
+          var sidenav = document.querySelector('.sidenav');
+          M.Sidenav.getInstance(sidenav).close();
+        });
+      });
+      
+    </script>
 </body>
 </html>
